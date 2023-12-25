@@ -10,19 +10,19 @@ int main()
     cout << "Masukkan jumlah array : ";
     cin >> Nilai;
     cout << "------------------------------------------\n";
-    int array[Nilai];
+    int Input[Nilai];
     cout << "Masukkan nilai anda : " << endl;
      for (int i = 0; i < Nilai; ++i) {
         cout << "Nilai ke-" << i + 1 << ": ";
-        cin >> array[i];
+        cin >> Input[i];
     }
 
-    int nilaiTertinggi = array[0];
+    int nilaiTertinggi = Input[0];
     int indeks = 0;
 
     for (int i = 1; i < Nilai; ++i) {
-        if (array[i] > nilaiTertinggi) {
-            nilaiTertinggi = array[i];
+        if (Input[i] > nilaiTertinggi) {
+            nilaiTertinggi = Input[i];
             indeks = i;
         }
     }
